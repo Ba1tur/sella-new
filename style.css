@@ -7,7 +7,7 @@
 }
 
 body {
-  background: linear-gradient(to right, #FCFCFC 50%, #fff 50%); 
+  background: linear-gradient(to right, #fcfcfc 50%, #fff 50%);
   font-family: "IBM Plex Sans", sans-serif;
 }
 
@@ -30,7 +30,16 @@ button {
   display: flex;
   justify-content: space-around;
   padding-top: 30px;
-  zoom: 0.9;
+  /* zoom: 0.9; */
+  -moz-transform: scale(0.9, 0.9);
+
+  -ms-transform: scale(0.9, 0.9);
+
+  -webkit-transform: scale(0.9, 0.9);
+
+  -o-transform: scale(0.9, 0.9);
+
+  transform: scale(0.9, 0.9);
 }
 
 .left-side {
@@ -454,13 +463,13 @@ button {
 }
 
 @media screen and (max-width: 895px) {
-  body{
+  body {
     background: #fff;
   }
   .left-side {
     display: none;
   }
-  .payment-form{
+  .payment-form {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -496,7 +505,7 @@ button {
 }
 
 @media screen and (max-width: 555px) {
-  .payment-section{
+  .payment-section {
     padding: 20px 5% 0 5%;
   }
   .inputs-block > h2 {
@@ -511,7 +520,7 @@ button {
   }
   .cart-input,
   .inputs-block__double,
-  .name-input{
+  .name-input {
     margin-top: 25px;
   }
   .input-text {
@@ -524,4 +533,12 @@ button {
     width: 54px;
     height: 54px;
   }
+}
+
+.some-description {
+  max-width: 350px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #000;
+  margin-top: 27px;
 }

@@ -29,7 +29,7 @@
 				<a href="#">Refund Policy</a>
 			</footer>
 		</div>
-		<form class="payment-form">
+		<form class="payment-form" style="display: none;">
 			<div class="payment-form__header">
 				<img class="back-arrow" src="/assets/gravity-ui_arrow-up.png" alt="arrow.png">
 				<div class="payment-form__header__logo">
@@ -70,6 +70,37 @@
 					</label>
 
 				</div>
+			</div>
+			<div class="payment-form__footer">
+				<div class="save-block">
+					<img src="/assets/lock.svg" alt="lock.svg">
+					<p>Платеж защищен</p>
+				</div>
+				<div class="mobile-total">
+					<p>К списанию</p>
+					<span>$2 400.00</span>
+				</div>
+				<button class="pay-btn">Оплатить</button>
+			</div>
+		</form>
+
+
+		<form class="payment-form">
+			<div class="payment-form__header">
+				<img class="back-arrow" src="/assets/gravity-ui_arrow-up.png" alt="arrow.png">
+				<div class="payment-form__header__logo">
+					<img src="/assets/sella_holding_banca_logo.jpg" alt="logo.png">
+				</div>
+				<img src="/assets/logo-masterCard-visa.png" alt="masterCard-visa.png">
+			</div>
+			<div class="inputs-block">
+				<h2>Подтверждение платежа</h2>
+				<div class="name-input">
+					<p class="input-text">Введите что-то</p>
+					<input type="text" required placeholder="Напишите что нибудь">
+				</div>
+				<p class="error-text">Заполните поля</p>
+				<p class="some-description">Здесь будет некая дополнительная информация, необходимая для заполнения поля</p>
 			</div>
 			<div class="payment-form__footer">
 				<div class="save-block">
