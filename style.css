@@ -454,7 +454,7 @@ button {
 
 @media screen and (max-width: 1051px) {
   .payment-section {
-    padding: 60px 1% 0 1%;
+    padding: 30px 1% 0 1%;
   }
   .total-block {
     max-width: 340px;
@@ -468,6 +468,13 @@ button {
   .left-side {
     display: none;
   }
+  .payment-form{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 65px;
+  }
   .payment-form__header {
     padding-left: 70px;
   }
@@ -477,9 +484,7 @@ button {
     width: 32px;
     height: 32px;
   }
-  .inputs-block {
-    margin-top: 50px;
-  }
+
   .pay-btn {
     width: 100%;
     height: 70px;
@@ -500,7 +505,7 @@ button {
 
 @media screen and (max-width: 555px) {
   .payment-section{
-    padding: 40px 5% 0 5%;
+    padding: 20px 5% 0 5%;
   }
   .inputs-block > h2 {
     font-size: 22px;
@@ -511,6 +516,11 @@ button {
   .name-input > input {
     height: 40px;
     font-size: 17px;
+  }
+  .cart-input,
+  .inputs-block__double,
+  .name-input{
+    margin-top: 25px;
   }
   .input-text {
     font-size: 17px;
