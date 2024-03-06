@@ -453,7 +453,7 @@ button {
 
 @media screen and (max-width: 1051px) {
   .payment-section {
-    padding: 30px 1% 0 1%;
+    padding: 0 1% 0 1%;
   }
   .total-block {
     max-width: 340px;
@@ -468,28 +468,29 @@ button {
     background: #fff;
   }
   .payment-section {
-    -moz-transform: scale(1, 1);
-    -ms-transform: scale(1, 1);
-    -webkit-transform: scale(1, 1);
-    -o-transform: scale(1, 1);
-    transform: scale(1, 1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
   }
   .left-side {
     display: none;
   }
   .payment-form {
-    height: 100vh;
+    height: 99vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-bottom: 90px;
+    padding-bottom: 65px;
+    padding: 25px 0 65px 0;
   }
   .payment-form__header {
     padding-left: 70px;
   }
   .back-arrow {
     left: 0;
-    top: 18px;
+    top: 42px;
     width: 32px;
     height: 32px;
   }
@@ -514,7 +515,7 @@ button {
 
 @media screen and (max-width: 555px) {
   .payment-section {
-    padding: 20px 5% 0 5%;
+    padding: 0 5% 0 5%;
   }
   .inputs-block > h2 {
     font-size: 22px;
@@ -541,11 +542,11 @@ button {
     width: 54px;
     height: 54px;
   }
-  .some-description{
+  .some-description {
     font-size: 16px;
     color: #000;
   }
-  .сonfirmation-text{
+  .сonfirmation-text {
     margin: 40px 0 50px 0 !important;
   }
 }
