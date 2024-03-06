@@ -1,0 +1,525 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffffff;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+a,
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+input,
+button {
+  outline: none;
+  border: none;
+}
+
+.payment-section {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 60px;
+}
+
+.left-side {
+  display: flex;
+  max-width: 500px;
+  width: 100%;
+  height: 745px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.left-side__header > h2 {
+  font-weight: 500;
+  font-size: 24px;
+  color: #000;
+}
+
+.left-side__header > h1 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #000;
+  margin-top: 27px;
+}
+
+.left-side__header > h1 > span {
+  color: #919191;
+}
+
+.total-block {
+  max-width: 373px;
+  width: 100%;
+  display: flex;
+  margin-top: 22px;
+  justify-content: space-between;
+}
+
+.total-block > p {
+  font-weight: 500;
+  font-size: 24px;
+  color: #000;
+}
+
+.total-block > span {
+  font-weight: 500;
+  font-size: 24px;
+  color: #000;
+}
+
+.methods {
+  display: flex;
+  flex-direction: column;
+  margin-top: 56px;
+}
+
+.methods > span {
+  font-weight: 500;
+  font-size: 20px;
+  color: #bbb;
+}
+
+.methods-btn {
+  width: 323px;
+  height: 68px;
+
+  font-weight: 550;
+  font-size: 20px;
+  color: #000;
+
+  background-image: url("/assets/cart-btn.png");
+  background-size: 58px;
+  background-repeat: no-repeat;
+  background-position: left 8px center;
+  margin-top: 20px;
+  padding-left: 42px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1.8px solid #1557f4;
+}
+
+.left-side__footer {
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.left-side__footer > a {
+  font-weight: 500;
+  font-size: 16px;
+  color: #bbb;
+}
+
+.payment-form {
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+}
+
+.payment-form__header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back-arrow {
+  position: absolute;
+  left: -75px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.payment-form__header__logo {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.payment-form__header__logo > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.inputs-block > h2 {
+  font-weight: 700;
+  font-size: 32px;
+  color: #000;
+  margin-top: 30px;
+}
+
+.input-text {
+  font-weight: 400;
+  font-size: 20px;
+  color: #000;
+}
+
+.cart-input {
+  width: 100%;
+  margin-top: 45px;
+}
+
+.cart-input > input {
+  width: 100%;
+  height: 50px;
+
+  font-weight: 500;
+  font-size: 20px;
+  color: #cecece;
+
+  padding-left: 78px;
+  margin-top: 11px;
+  background: #f2f3f5;
+  border-radius: 8px;
+  background-image: url("/assets/masteCard-logo.png");
+  background-size: 30px;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+  background-position: left 19px center;
+}
+
+.inputs-block__double {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.date-input {
+  width: 232px;
+}
+
+.date-input > input {
+  width: 100%;
+  height: 50px;
+
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  color: #cecece;
+
+  transition: 0.3s;
+  margin-top: 11px;
+  background: #f2f3f5;
+  border-radius: 8px;
+}
+
+.cvv-input {
+  width: 232px;
+}
+
+.cvv-input > input {
+  width: 100%;
+  height: 50px;
+
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  color: #cecece;
+
+  transition: 0.3s;
+  margin-top: 11px;
+  background: #f2f3f5;
+  border-radius: 8px;
+}
+
+.name-input {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.name-input > input {
+  width: 100%;
+  height: 50px;
+
+  font-weight: 500;
+  font-size: 20px;
+  color: #cecece;
+
+  transition: 0.3s;
+  margin-top: 11px;
+  padding-left: 30px;
+  background: #f2f3f5;
+  border-radius: 8px;
+}
+
+/* .cart-input > input:valid {
+  transition: 0.3s;
+  background: #f2f3f5;
+  background: url("/assets/masteCard-logo.png") #f2f3f5;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: left 19px center;
+}
+.date-input > input:valid,
+.cvv-input > input:valid,
+.name-input > input:valid {
+  background: #f2f3f5;
+} */
+
+.cart-input > input:invalid {
+  transition: 0.3s;
+  border: 1px solid #f49b9b;
+  background: url("/assets/masteCard-logo.png") #faf2f2;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: left 19px center;
+}
+.date-input > input:invalid,
+.cvv-input > input:invalid,
+.name-input > input:invalid {
+  border: 1px solid #f49b9b;
+  background: #faf2f2;
+}
+
+.error-text {
+  font-weight: 500;
+  font-size: 16px;
+  padding-top: 15px;
+  color: #f07878;
+}
+
+.checkbox-input {
+  display: flex;
+  margin-top: 21px;
+}
+
+.cbx {
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.cbx span {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translate3d(0, 0, 0);
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+}
+
+.cbx span:first-child {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  transform: scale(1);
+  vertical-align: middle;
+  border: 1px solid #1557f4;
+  transition: all 0.2s ease;
+}
+
+.cbx span:first-child svg {
+  position: absolute;
+  top: 3.5px;
+  left: 4px;
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 16px;
+  stroke-dashoffset: 16px;
+  transition: all 0.3s ease;
+  transition-delay: 0.1s;
+  transform: translate3d(0, 0, 0);
+}
+
+.cbx span:first-child:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #506eec;
+  display: block;
+  transform: scale(0);
+  opacity: 1;
+  border-radius: 50%;
+}
+
+.cbx span:last-child {
+  padding-left: 8px;
+}
+
+.cbx:hover span:first-child {
+  border-color: #506eec;
+}
+
+.inp-cbx:checked + .cbx span:first-child {
+  background: #506eec;
+  border-color: #506eec;
+  animation: wave 0.4s ease;
+}
+
+.inp-cbx:checked + .cbx span:first-child svg {
+  stroke-dashoffset: 0;
+}
+
+.inp-cbx:checked + .cbx span:first-child:before {
+  transform: scale(3.5);
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+@keyframes wave {
+  50% {
+    transform: scale(0.9);
+  }
+}
+
+.save-block {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid #b5fbb4;
+  border-radius: 32px;
+  width: 170px;
+  height: 25px;
+  margin-top: 36px;
+  margin: 36px 0 0 5px;
+  background: #e5ffea;
+}
+
+.save-block > img {
+  position: absolute;
+  left: -5px;
+}
+
+.save-block > p {
+  font-weight: 500;
+  font-size: 14px;
+  padding-left: 35px;
+  text-align: center;
+  color: #3de35d;
+}
+
+.pay-btn {
+  width: 225px;
+  height: 60px;
+
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+
+  margin-top: 13px;
+  border-radius: 10px;
+  background: #1557f4;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.pay-btn:hover {
+  background: none;
+  border: 2px solid #1557f4;
+  color: #1557f4;
+}
+
+.mobile-total {
+  width: 100%;
+  display: none;
+  justify-content: space-between;
+  padding: 0 3% 0 3%;
+  margin-top: 20px;
+}
+
+.mobile-total > p {
+  font-weight: 500;
+  font-size: 20px;
+  color: #000;
+}
+
+.mobile-total > span {
+  font-weight: 500;
+  font-size: 20px;
+  color: #000;
+}
+
+@media screen and (max-width: 1051px) {
+  .payment-section {
+    padding: 60px 1% 0 1%;
+  }
+  .total-block {
+    max-width: 340px;
+  }
+  .inputs-block__double {
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 895px) {
+  .left-side {
+    display: none;
+  }
+  .payment-form__header {
+    padding-left: 70px;
+  }
+  .back-arrow {
+    left: 0;
+    top: 18px;
+    width: 32px;
+    height: 32px;
+  }
+  .inputs-block {
+    margin-top: 50px;
+  }
+  .pay-btn {
+    width: 100%;
+    height: 70px;
+    margin-top: 20px;
+  }
+  .mobile-total {
+    display: flex;
+    margin-top: 45px;
+  }
+  .checkbox-input {
+    padding-left: 2px;
+    margin-top: 11px;
+  }
+  .save-block {
+    margin: 36px 0 0 3px;
+  }
+}
+
+@media screen and (max-width: 555px) {
+  .payment-section{
+    padding: 40px 5% 0 5%;
+  }
+  .inputs-block > h2 {
+    font-size: 22px;
+  }
+  .cart-input > input,
+  .date-input > input,
+  .cvv-input > input,
+  .name-input > input {
+    height: 40px;
+    font-size: 17px;
+  }
+  .input-text {
+    font-size: 17px;
+  }
+  .payment-form__header {
+    padding-left: 55px;
+  }
+  .payment-form__header__logo {
+    width: 54px;
+    height: 54px;
+  }
+}
