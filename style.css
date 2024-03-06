@@ -482,7 +482,7 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-bottom: 65px;
+    padding-bottom: 75px;
   }
   .payment-form__header {
     padding-left: 70px;
