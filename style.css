@@ -133,7 +133,19 @@ button {
   position: relative;
   max-width: 500px;
   width: 100%;
+  /* display: inline; */
+  display: flex;
+  flex-direction: column;
 }
+
+
+/* .payment-form:first-of-type{
+  display: none;
+}
+
+.payment-form:last-child{
+  display: none;
+} */
 
 .payment-form__header {
   width: 100%;
